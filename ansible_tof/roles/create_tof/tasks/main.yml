@@ -1,0 +1,13 @@
+---
+- name: Copy heat template
+  template:
+    src: stack.j2
+    dest: "{{ template_path }}"
+
+- name: Copy config template
+  template:
+    src: config.j2
+    dest: "{{ config_path }}"
+
+- name: Create new tof stack
+  command: openstack --os-cloud admin stack create -t {{ template_path }} tof

@@ -1,0 +1,4 @@
+---
+
+- name: Delete tof stack
+  command: openstack --os-cloud admin stack delete -y tof
