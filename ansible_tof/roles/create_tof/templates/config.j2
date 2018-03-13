@@ -8,7 +8,7 @@ done
 
 
 #Configure tof IP
-sed -i 's/TOF_IP =.*/TOF_IP = "192.168.50.21"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
+sed -i 's/TOF_IP =.*/TOF_IP = "10.0.0.10"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure tof SGW MAC
 sed -i 's/SGW_IF_MAC =.*/SGW_IF_MAC = "aa:aa:aa:aa:aa:cc"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
@@ -17,16 +17,16 @@ sed -i 's/SGW_IF_MAC =.*/SGW_IF_MAC = "aa:aa:aa:aa:aa:cc"/' /home/ubuntu/tof-age
 sed -i 's/PING_IP=.*/PING_IP= "8.8.8.8"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure enodeb network
-sed -i 's/ENODEB_NET=.*/ENODEB_NET= "10.0.0.0\/24"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
+#sed -i 's/ENODEB_NET=.*/ENODEB_NET= "10.0.0.0\/24"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure enodeb gw
-sed -i 's/ENODEB_GW=.*/ENODEB_GW= "192.168.50.99"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
+#sed -i 's/ENODEB_GW=.*/ENODEB_GW= "192.168.50.99"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure sgw network
-sed -i 's/SGW_NET=.*/SGW_NET= "172.17.0.0\/24"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
+#sed -i 's/SGW_NET=.*/SGW_NET= "172.17.0.0\/24"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure sgw gw
-sed -i 's/SGW_GW=.*/SGW_GW= "192.168.50.129"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
+#sed -i 's/SGW_GW=.*/SGW_GW= "192.168.50.129"/' /home/ubuntu/tof-agent/tof-core/Configurations.py 
 
 #Configure tof gw for app
 sed -i 's/app_router_ip =.*/app_router_ip = 20.20.20.1/' /home/ubuntu/tof-agent/run_agg/core.config 
