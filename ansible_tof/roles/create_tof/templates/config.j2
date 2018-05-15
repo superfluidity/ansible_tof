@@ -37,12 +37,12 @@ sed -i 's/app_network = .*/app_network = 172.24.4.0\/24/' /home/ubuntu/tof-agent
 #Configure tof app IP
 sed -i 's/app_interface_ip = .*/app_interface_ip = 20.20.20.3/' /home/ubuntu/tof-agent/run_agg/core.config 
 
-#Configure arp table
-arp -s 10.0.0.1 00:00:00:00:00:01
-arp -s 10.0.0.3 00:00:00:00:00:03
-
 
 #Start tof
 bash /home/ubuntu/tof-agent/run_agg/run_agg.sh
+
+#Configure arp table
+arp -s 10.0.0.1 00:00:00:00:00:01
+arp -s 10.0.0.3 00:00:00:00:00:03
 
 exit 0
